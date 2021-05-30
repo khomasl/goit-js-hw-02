@@ -1,6 +1,9 @@
-// Объяви перемнную message и запиши в неё сообщение о покупке, строку в формате: "You picked <имя товара>, price per item is <цена товара> credits". Где <имя товара> и <цена товара> это значения переменных productName и pricePerItem. Используй синтаксис шаблонных строк.
-const productName = "Droid";
-const pricePerItem = 3500;
-
-// Change code below this line
-const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+// // Объяви три переменные и присвой каждой из них значение, используя нотацию квадратных скобок.
+// Имя переменной	Значение переменной
+// firstElement	первый элемент массива
+// secondElement	второй элемент массива
+// lastElement	последний элемент массива
+const fruits = ["apple", "plum", "pear", "orange"];
+const firstElement = fruits[0];
+const secondElement = fruits[1];
+const lastElement = fruits[3]; 

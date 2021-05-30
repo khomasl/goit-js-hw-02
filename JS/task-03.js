@@ -1,12 +1,18 @@
-// Объяви следующие переменные используя ключевое слово const или let и присвой им соответствующие значения.
+// Функция checkStorage проверяет возможность оформления заказа и возвращает сообщение о результате. Она принимает два параметра, значения которых будут задаваться во время её вызова.
 
-// topSpeed - число 160.
-// distance - число 617.54.
-// login - строка "mango935".
-// isOnline - буль true.
-// isAdmin - буль false.
-const topSpeed = 160;
-const distance = 617.54;
-const login = "mango935";
-const isOnline = true;
-const isAdmin = false;
+// available - доступное количество товаров на складе
+// ordered - количество единиц товара в заказе
+// Проведи рефакторинг кода функции checkStorage используя паттерн «ранний возврат».
+function checkStorage(available, ordered) {
+    // Change code below this line 
+    
+    if (ordered === 0) {
+      return "Your order is empty!";
+    }
+    if (ordered > available) {
+      return "Your order is too large, not enough goods in stock!";
+    } 
+    return "The order is accepted, our manager will contact you";
+   
+    // Change code above this line
+  }

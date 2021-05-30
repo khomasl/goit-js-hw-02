@@ -1,7 +1,19 @@
-// Имя товара изменили на "Repair droid" и увеличили его цену на 1500 кредитов. Переопредели значения переменных pricePerItem и productName после их объявления.
-let productName = "Droid";
-let pricePerItem = 2000;
+// Функция checkPassword получает пароль пользователя в параметр password, проверяет его на совпадение с паролем администратора в переменной ADMIN_PASSWORD и возвращает сообщение о результате сравнения.
 
-// Change code below this line
-productName = "Repair droid";
-pricePerItem += 1500;
+// Проведи рефакторинг кода функции checkStorage используя паттерн «ранний возврат»:
+
+// удали переменную message
+// удали else
+// код должен работать так же, как и до оптимизации
+function checkPassword(password) {
+    const ADMIN_PASSWORD = "jqueryismyjam";
+    // Change code below this line
+  
+    if (password === ADMIN_PASSWORD) {
+        return "Welcome!"; 
+    } 
+    return "Access denied, wrong password!";
+    
+    // Change code above this line
+  }
+  

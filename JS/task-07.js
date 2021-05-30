@@ -1,5 +1,3 @@
-// Объяви функцию sayHi, внутри которой добавь console.log() со строкой "Hello, this is my first function!". После объявления вызови функцию sayHi.
-function sayHi(){
-    console.log("Hello, this is my first function!");
-}
-sayHi();
+// Объяви переменную fruitsArrayLength и присвой ей длину массива fruits используя свойство length.
+const fruits = ["apple", "peach", "pear", "banana"];
+const fruitsArrayLength = fruits.length; 
