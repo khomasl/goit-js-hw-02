@@ -1,19 +1,7 @@
-// Функция checkPassword(password) получает пароль пользователя в параметр password, проверяет его на совпадение с паролем администратора в переменной ADMIN_PASSWORD и возвращает сообщение о результате сравнения, хранящееся в переменной message.
+// Дополни код цикла for так, чтобы он последовательно логировал все элементы массива fruits.
+const fruits = ['apple', 'plum', 'pear', 'orange'];
 
-// Если значение параметра password равно null, значит пользователь отменил операцию и в message записывается строка "Canceled by user!".
-// Если значение параметра password совпадает со значением ADMIN_PASSWORD, в переменную message присваивается строка "Welcome!".
-// Если ни одно из предыдущих условий не выполнилось, в переменную message записывается строка "Access denied, wrong password!"
-function checkPassword(password) {
-    const ADMIN_PASSWORD = 'jqueryismyjam';
-    let message;
-  
-    if (password === null) { // Change this line
-      message =  'Canceled by user!';
-    } else if (password === ADMIN_PASSWORD) { // Change this line
-      message = 'Welcome!';
-    } else {
-      message = 'Access denied, wrong password!';
-    }
-  
-    return message;
-  }
+for (let i = 0; i < fruits.length; i += 1) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}

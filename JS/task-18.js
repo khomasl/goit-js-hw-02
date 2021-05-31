@@ -1,30 +1,14 @@
-// Станция по продаже ремонтных дроидов готова к запуску, осталось написать программное обеспечение для отдела продаж.
-
-// Функция makeTransaction(pricePerDroid, orderedQuantity, customerCredits) выполняет транзакцию по продаже дроидов и возвращает сообщение о результате операции. Она объявляет три параметра, значения которых будут задаваться во время её вызова:
-
-// pricePerDroid - цена одного дроида
-// orderedQuantity - кол-во заказанных дроидов
-// customerCredits - сумма средств на счету клиента
-// Дополни её следующим функционалом:
-
-// Объяви переменную totalPrice для хранения общей суммы заказа и присвой ей выражение расчёта этой суммы.
-// Добавь проверку сможет ли клиент оплатить заказ:
-// если сумма к оплате превышает количество кредитов на счету клиента, запиши в переменную message строку "Insufficient funds!";
-// в противном случае, вычти сумму покупки со счёта клиента и запиши в переменную message сообщение: "You ordered <число> droids, you have <число> credits left".
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-    const totalPrice = pricePerDroid * orderedQuantity;
-    let message;
-        // Change code below this line
-    if (totalPrice > customerCredits){
-        message = "Insufficient funds!";
-    }
-    else{
-        customerCredits -= totalPrice;
-        message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`;
-    }
-
-    // Change code above this line
-    return message;
-  }
-
-  console.log(makeTransaction(500, 10, 5000));
+// Напиши функцию calculateTotal(number), которая принимает целое число (параметр number) и возвращает сумму всех целых чисел от единицы и до этого числа. Например, если number равно 3, то сумма это 1 + 2 + 3, то есть 6.
+function calculateTotal(number) {
+    // Change code below this line
+    // 1-й спосіб
+   // return Math.round((1 + number) * number/ 2) 
+   // 2-й спосіб
+   let sum = 0;
+   for (let i = 1; i <= number; i += 1){
+       sum += i;
+   }
+   return sum;
+   
+     // Change code above this line
+   }

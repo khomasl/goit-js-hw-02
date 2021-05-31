@@ -1,22 +1,10 @@
-// Функция checkStorage(available, ordered) проверяет возможность оформления заказа и возвращает сообщение о результате. Она объявляет два параметра, значения которых будут задаваться во время её вызова:
+// Напиши функцию makeArray(firstArray, secondArray, maxLength) для создания нового массива со всеми элементами двух исходных firstArray и secondArray. Параметр maxLength содержит максимально допустимую длину нового массива.
 
-// available - общее количество товаров на складе
-// ordered - единиц товара в заказе
-// Используя ветвления дополни код функции так, что:
-
-// Если в заказе указано число, превышающее количество товаров на складе, в переменную message записывается строка "Not enough goods in stock!".
-// В противном случае записывается строка "Order is processed, our manager will contact you.".
-// Тесты
-function checkStorage(available, ordered) {
-    let message;
+// Если количество элементов нового массива больше maxLength, функция должна вернуть копию массива длиной maxLength элементов. В противном случае функция должна вернуть новый массив целиком.
+function makeArray(firstArray, secondArray, maxLength) {
     // Change code below this line
-    if (ordered > available){
-        message = "Not enough goods in stock!";
-    }
-    else{
-        message = "Order is processed, our manager will contact you.";
-    }
+    const allArray = firstArray.concat(secondArray);
+    return allArray.slice(0,maxLength);
+
     // Change code above this line
-    return message;
-}
-  
+  }

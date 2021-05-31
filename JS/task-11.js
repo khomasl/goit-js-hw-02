@@ -1,12 +1,16 @@
-// Функция calculateTotalPrice считает и возвращает общую сумму покупки. Она принимает два параметра, значения которых будут задаваться во время её вызова.
+// Сервису гравировки украшений нужна функция, которая бы автоматически считала цену гравировки, в зависимости от количества слов и цены за слово.
 
-// orderedQuantity - количество единиц товара в заказе;
-// pricePerItem - цена одной единицы товара.
-// Дополни код функции так, чтобы в переменную totalPrice записывалась общая сумма покупки, результат умножения кол-ва товаров на цену одного.
-function calculateTotalPrice (orderedQuantity, pricePerItem) {
-    // Change code below this line
-    const totalPrice = orderedQuantity * pricePerItem;
-  
-    // Change code above this line
-    return totalPrice;
-  };
+// Объявлена функция calculateEngravingPrice(message, pricePerWord). Эта функция принимает строку, состоящую из слов разделённых только пробелами (параметр message) и цену гравировки одного слова (параметр pricePerWord).
+
+// Напиши тело функции, чтобы она возвращала общую стоимость гравировки всех слов в строке.
+function calculateEngravingPrice(message, pricePerWord) {
+  // Change code below this line
+  let count = 1;
+  for (const character of message){
+    if (character === ' '){
+      count += 1;
+    }
+  }
+  return count * pricePerWord;
+  // Change code above this line
+}
