@@ -1,10 +1,16 @@
-// Выполни рефакторинг решения задачи «Склад товаров», заменив инструкцию if...else тернарным оператором.
-function checkStorage(available, ordered) {
-    let message;
-    // Change code below this line
-  
-      message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
-  
-    // Change code above this line
-    return message;
+// Общими элементами массивов называют те элементы, которые присутствуют во всех массивах.
+
+// Например, в двух массивах [1, 3, 5] и [0, 8, 5, 3] общими будут числа 3 и 5, т.к. они присутствуют в обоих исходных массивах. А числа 0, 1 и 8 присутствуют только в одном из массивов.
+
+// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины в параметры array1 и array2, и возвращает новый массив, состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
+function getCommonElements(array1, array2) {
+  // Change code below this line
+  const newArray = [];
+  for (element of array1){
+    if (array2.includes(element)){
+      newArray.push(element);
+    }
   }
+  return newArray;
+ // Change code above this line
+}

@@ -1,8 +1,10 @@
-// Функция checkIfCanAccessContent(subType) проверяет, может ли пользователь получить доступ к контенту. Проверка происходит по типу подписки. Получить доступ могут только пользователи с подпиской pro или vip.
-
-// Присвой переменной canAccessContent выражение проверки подписки. Если значение параметра subType равно строкам "pro" или "vip", пользователь получит доступ. Результатом выражения проверки будет буль true или false.
-function checkIfCanAccessContent(subType) {
-    const canAccessContent = subType === "pro" || subType === "vip"; // Change this line
-  
-    return canAccessContent;
+// Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала массив всех целых чисел от значения min до max.
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+  for (let i = min; i <= max; i += 1) {
+    numbers.push(i);
   }
+  // Change code above this line
+  return numbers;
+}
